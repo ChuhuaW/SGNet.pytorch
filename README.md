@@ -7,13 +7,11 @@ The source code and pretrained models will be made availble in June. Stay tuned.
 
 
 ```
-@misc{wang2021stepwise,
-      title={Stepwise Goal-Driven Networks for Trajectory Prediction}, 
-      author={Chuhua Wang and Yuchen Wang and Mingze Xu and David J. Crandall},
-      year={2021},
-      eprint={2103.14107},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{wang2021stepwise,
+      title={Stepwise Goal-Driven Networks for Trajectory Prediction},
+      author={Wang, Chuhua and Wang, Yuchen and Xu, Mingze and Crandall, David J},
+      journal={arXiv:2103.14107},
+      year={2021}
 }
 ```
 

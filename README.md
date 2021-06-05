@@ -3,7 +3,7 @@
 ```diff
 - Rank 3rd on nuScences prediction task at 6th AI Driving Olympics, ICRA 2021
 ```
-The source code and pretrained models will be made availble in June. Stay tuned.
+The source code and pretrained models will be made availble. Stay tuned.
 
 
 ```

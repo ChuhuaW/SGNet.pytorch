@@ -1,0 +1,3 @@
+[submodule "Trajectron-plus-plus"]
+	path = Trajectron-plus-plus
+	url = https://github.com/StanfordASL/Trajectron-plus-plus.git

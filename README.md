@@ -1,4 +1,4 @@
-# Stepwise Goal-Driven Networks for Trajectory Prediction
+# Pytorch Implementation for Stepwise Goal-Driven Networks for Trajectory Prediction (RA-L/ICRA2022)
 
 
 
@@ -128,12 +128,15 @@ python tools/ethucy/eval_deterministic.py --gpu $CUDA_VISIBLE_DEVICES --dataset 
 ## Citation
 
 ```
-@article{wang2021stepwise,
-      title={Stepwise Goal-Driven Networks for Trajectory Prediction},
-      author={Wang, Chuhua and Wang, Yuchen and Xu, Mingze and Crandall, David J},
-      journal={arXiv:2103.14107},
-      year={2021}
-}
+@ARTICLE{9691856,
+  author={Wang, Chuhua and Wang, Yuchen and Xu, Mingze and Crandall, David J.},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Stepwise Goal-Driven Networks for Trajectory Prediction}, 
+  year={2022},
+  volume={7},
+  number={2},
+  pages={2716-2723},
+  doi={10.1109/LRA.2022.3145090}}
 ```
 ```diff
 - Rank 3rd on nuScences prediction task at 6th AI Driving Olympics, ICRA 2021

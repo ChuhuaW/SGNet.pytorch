@@ -4,14 +4,14 @@
 
 ## Installation
 
-# Cloning
+### Cloning
 
 We use part of the dataloader in Trajectron++, so we include [Trajectron++](https://github.com/StanfordASL/Trajectron-plus-plus) as a submodule. 
 ```
 git clone --recurse-submodules git@github.com:ChuhuaW/SGNet.pytorch.git
 ```
 
-# Environment
+### Environment
 
 * Install conda environment from yml file
 
@@ -19,7 +19,7 @@ git clone --recurse-submodules git@github.com:ChuhuaW/SGNet.pytorch.git
 conda env create --file SGNet_env.yml
 ```
 
-# Data
+## Data
 
 * JAAD and PIE
 JAAD and PIE can be downloaded from https://github.com/ykotseruba/JAAD and https://github.com/aras62/PIE, respectively. Creating symlinks from the dataset path to ```./data```
@@ -132,11 +132,7 @@ python tools/ethucy/eval_deterministic.py --gpu $CUDA_VISIBLE_DEVICES --dataset 
   author={Wang, Chuhua and Wang, Yuchen and Xu, Mingze and Crandall, David J.},
   journal={IEEE Robotics and Automation Letters}, 
   title={Stepwise Goal-Driven Networks for Trajectory Prediction}, 
-  year={2022},
-  volume={7},
-  number={2},
-  pages={2716-2723},
-  doi={10.1109/LRA.2022.3145090}}
+  year={2022}}
 ```
 ```diff
 - Rank 3rd on nuScences prediction task at 6th AI Driving Olympics, ICRA 2021

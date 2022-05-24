@@ -51,53 +51,5 @@ def main(args):
     print("ADE_08: %4f;  FDE_08: %4f;  ADE_12: %4f;   FDE_12: %4f\n" % (ADE_08, FDE_08, ADE_12, FDE_12))
 
 
-        # # save checkpoints if loss decreases
-        # if test_loss < min_loss:
-        #     try:
-        #         os.remove(best_model)
-        #     except:
-        #         pass
-
-        #     min_loss = test_loss
-        #     saved_model_name = 'epoch_' + str(format(epoch,'03')) + '_loss_%.4f'%min_loss + '.pth'
-
-        #     print("Saving checkpoints: " + saved_model_name )
-        #     if not os.path.isdir(save_dir):
-        #         os.mkdir(save_dir)
-
-        #     save_dict = {   'epoch': epoch,
-        #                     'model_state_dict': model.state_dict(),
-        #                     'optimizer_state_dict': optimizer.state_dict()}
-        #     torch.save(save_dict, os.path.join(save_dir, saved_model_name))
-        #     best_model = os.path.join(save_dir, saved_model_name)
-
-
-
-        # if ADE_12 < min_ADE_12:
-        #     try:
-        #         os.remove(best_model_metric)
-        #     except:
-        #         pass
-        #     min_ADE_08 = ADE_08
-        #     min_FDE_08 = FDE_08
-        #     min_ADE_12 = ADE_12
-        #     min_FDE_12 = FDE_12
-        #     with open(os.path.join(save_dir, 'metric.txt'),"w") as f:
-        #         f.write("ADE_08: %4f; FDE_08: %4f; ADE_12: %4f; FDE_12: %4f;" % (ADE_08, FDE_08,ADE_12,FDE_12))
-
-        #     saved_model_metric_name = 'metric_epoch_' + str(format(epoch,'03')) + '_loss_%.4f'%min_loss + '.pth'
-
-
-        #     print("Saving checkpoints: " + saved_model_metric_name)
-        #     if not os.path.isdir(save_dir):
-        #         os.mkdir(save_dir)
-        #     save_dict = {   'epoch': epoch,
-        #                     'model_state_dict': model.state_dict(),
-        #                     'optimizer_state_dict': optimizer.state_dict()}
-        #     torch.save(save_dict, os.path.join(save_dir, saved_model_metric_name))
-
-
-        #     best_model_metric = os.path.join(save_dir, saved_model_metric_name)
-
 if __name__ == '__main__':
     main(parse_args())

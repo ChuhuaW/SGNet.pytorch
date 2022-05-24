@@ -69,33 +69,5 @@ def main(args):
         print("Test Loss: {:.4f}".format(test_loss))
         print("MSE_05: %4f;  MSE_10: %4f;  MSE_15: %4f\n" % (MSE_05, MSE_10, MSE_15))
 
-
-
-
-        if MSE_15 < min_MSE_15:
-            try:
-                os.remove(best_model_metric)
-            except:
-                pass
-
-            min_MSE_15 = MSE_15
-            with open(os.path.join(save_dir, 'metric.txt'),"w") as f:
-                f.write("MSE_05: %4f;   MSE_10: %4f;  MSE_15: %4f;  FMSE: %4f;  FIOU: %4f \n" % (MSE_05, MSE_10, min_MSE_15, FMSE, FIOU))
-                f.write("CFMSE: %4f;   CMSE: %4f;  \n" % (CFMSE, CMSE))
-
-            saved_model_metric_name = 'metric_epoch_' + str(format(epoch,'03')) + '_loss_%.4f'%min_loss + '.pth'
-
-
-            print("Saving checkpoints: " + saved_model_metric_name)
-            if not os.path.isdir(save_dir):
-                os.mkdir(save_dir)
-            save_dict = {   'epoch': epoch,
-                            'model_state_dict': model.module.state_dict(),
-                            'optimizer_state_dict': optimizer.state_dict()}
-            torch.save(save_dict, os.path.join(save_dir, saved_model_metric_name))
-
-
-            best_model_metric = os.path.join(save_dir, saved_model_metric_name)
-
 if __name__ == '__main__':
     main(parse_args())
